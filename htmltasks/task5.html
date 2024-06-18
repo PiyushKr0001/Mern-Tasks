@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body style="display: flex; justify-content: center; align-items: center; height: 100vh;">
+    <form action="/submit_registration" method="post">
+        <h2 style="color: blue; text-align: center;">Registration form</h2>
+        <table border="1" cellspacing="0" cellpadding="5" style="width: 600px;">
+            <tr>
+                <td style="width: 150px;">First Name</td>
+                <td><input type="text" name="firstname" style="width: 98%;"></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" name="lastname" style="width: 98%;"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="email" name="email" style="width: 98%;"></td>
+            </tr>
+            <tr>
+                <td>Password</td>
+                <td><input type="password" name="password" style="width: 98%;"></td>
+            </tr>
+            <tr>
+                <td>Re-enter Password</td>
+                <td><input type="password" name="repassword" style="width: 98%;"></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    
+                    <input type="radio" name="gender" value="male" /> Male<br />
+                    <hr style="margin: 5px 0;" />
+                    <input type="radio" name="gender" value="female" /> Female
+                </td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td><input type="number" name="age" style="width: 98%;"></td>
+            </tr>
+            <tr>
+                <td>Phone Number</td>
+                <td><input type="tel" name="phone" style="width: 98%;"></td>
+            </tr>
+            <tr>
+                <td>Address</td>
+                <td><textarea name="address" rows="4" cols="40" style="width: 98%;"></textarea></td>
+            </tr>
+            <tr>
+                <td>State</td>
+                <td><input type="text" name="state" style="width: 98%;"></td>
+            </tr>
+            <tr>
+                <td>Country</td>
+                <td>
+                    <select name="country" style="width: 98%;">
+                        <option value="">Choose your country</option>
+                        <option value="india">India</option>
+                        <option value="usa">USA</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Languages known</td>
+                <td>
+                    <input type="checkbox" name="languages" value="english" /> English
+                    <input type="checkbox" name="languages" value="kannada" /> Kannada
+                    <input type="checkbox" name="languages" value="hindi" /> Hindi
+                    <input type="checkbox" name="languages" value="telugu" /> Telugu
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="checkbox" name="declaration" /> Hereby I declare all the given details are true
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" style="text-align: right;">
+                    Log in to <a href="https://www.ethnus.com" style="text-decoration: underline;">Ethnus</a> website
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    <input type="submit" value="Register" />
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

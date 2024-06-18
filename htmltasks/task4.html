@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Form Example</title>
+</head>
+<body>
+    <form action="/submit_form" method="post">
+        <table border="0" cellspacing="5" cellpadding="2">
+            <tr>
+                <td>Full Name:</td>
+                <td><input type="text" name="fullname" value="Vincent Maverick Durano"></td>
+            </tr>
+            <tr>
+                <td>Username:</td>
+                <td><input type="text" name="username" value="Vinz"></td>
+            </tr>
+            <tr>
+                <td>Password:</td>
+                <td><input type="password" name="password" value="password"></td>
+            </tr>
+            <tr>
+                <td>Re Password:</td>
+                <td><input type="password" name="repassword" value="password"></td>
+            </tr>
+            <tr>
+                <td>Address:</td>
+                <td><input type="text" name="address" value="Cebu, Philippines"></td>
+            </tr>
+            <tr>
+                <td>Age:</td>
+                <td><input type="text" name="age" value="22"></td>
+            </tr>
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <select name="gender">
+                        <option value="male" selected>Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="submit" value="Save" style="border: 2px solid orange; float: left;">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

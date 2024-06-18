@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Form</title>
+    <link rel="stylesheet" href="./task6.css">
+</head>
+<body>
+    <div class="container">
+        <img src="./images/photo.jpg" alt="Avatar" class="avatar" />
+        <form>
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input
+                    type="text"
+                    id="username"
+                    name="username"
+                    placeholder="Enter Username"
+                />
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    placeholder="Enter Password"
+                />
+            </div>
+            <button type="submit" class="btn login">Login</button>
+            <div class="checkbox-group">
+                <input type="checkbox" id="remember" name="remember" />
+                <label for="remember">Remember me</label>
+            </div>
+            <div class="footer">
+                <button type="button" class="btn cancel">Cancel</button>
+                <a href="#">Forgot <span style="color: #f44336">password?</span></a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
